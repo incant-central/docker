@@ -1,7 +1,8 @@
 {
     "kind": "shell",
+    "version": "1.0.0",
     "spec": {
-        "command": "docker",
+        "main": "docker",
         "collections": {
             "tag": [
                 {
