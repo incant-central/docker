@@ -3,30 +3,7 @@
     "version": "1.0.0",
     "spec": {
         "main": "docker",
-        "collections": {
-            "tag": [
-                {
-                    "name": "registry",
-                    "type": "variable"
-                },
-                {
-                    "name": "name",
-                    "type": "variable",
-                    "required": true
-                },
-                {
-                    "name": "version",
-                    "type": "variable",
-                    "default": "latest"
-                },
-                {
-                    "name": "tag",
-                    "type": "variable",
-                    "value": "${registry ? `${registry}/` : ''}${name}:${version}"
-                }
-            ]
-        },
-        "commands": [
+        "commands": {
             "build": {
                 "args": [
                     {
@@ -211,6 +188,29 @@
                     }
                 ]
             }
-        ]
+        },
+        "collections": {
+            "tag": [
+                {
+                    "name": "registry",
+                    "type": "variable"
+                },
+                {
+                    "name": "name",
+                    "type": "variable",
+                    "required": true
+                },
+                {
+                    "name": "version",
+                    "type": "variable",
+                    "default": "latest"
+                },
+                {
+                    "name": "tag",
+                    "type": "variable",
+                    "value": "${registry ? `${registry}/` : ''}${name}:${version}"
+                }
+            ]
+        }
     }
 }
