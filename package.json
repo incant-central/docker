@@ -1,6 +1,6 @@
 {
   "name": "@targets/docker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Docker ShellSpec target",
   "main": "docker.json",
   "scripts": {
