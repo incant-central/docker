@@ -1,5 +1,5 @@
 {
-  "name": "@targets/docker",
+  "name": "@incant/docker",
   "version": "0.0.3",
   "description": "Docker ShellSpec target",
   "main": "docker.json",
